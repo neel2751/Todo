@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import "./index.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// const fname = "Neel";
+// const lname = "Patel";
+// let newDate = new Date().toLocaleDateString();
+// let newTime = new Date().toLocaleTimeString();
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// const img1 = "https://picsum.photos//200/300";
+// const img2 = "https://picsum.photos//250/300";
+// const img3 = "https://picsum.photos//300/300";
+
+ReactDOM.render(<App/>,document.getElementById('root'));
