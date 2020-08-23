@@ -13,7 +13,7 @@ const App = () => {
 
     const listAdd = () => {
       if(itemList === ("")){
-        alert("Enter Text");
+        alert("Please Enter Item");
       }else{
       newaddItem( (oldItem) => {
         return [...oldItem, itemList];
@@ -41,7 +41,7 @@ const App = () => {
       <br/>
       <input type="text" value={itemList} placeholder="Add Items" onChange={itemEvent} />
       <button className="newBtn" onClick={listAdd}> + </button>
-
+      <div className="list">
       <ol>
         {/* <li>{itemList}</li> */}
 
@@ -55,6 +55,7 @@ const App = () => {
       })}
 
       </ol>
+      </div>
     </div>
     </div>
     </>
