@@ -4,10 +4,11 @@ const Todo = (props) => {
     return (
         <>
         <div className="todo_style">
+        <li>{props.id +1})</li>
+        <li>{props.listofitem}</li>
         <button className="delete" onClick= { () => {
             props.listSelect(props.id);
         }}>X</button>
-        <li>{props.listofitem}</li>
         </div>
         </>
     );
